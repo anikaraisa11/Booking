@@ -1,0 +1,52 @@
+/* CustomCursor.css */
+/* body {
+    cursor: none; 
+} */
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #008080;
+    background-color: transparent;
+    position: absolute;
+    animation: slowMove 10s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+}
+
+.ball2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 5px solid #008080;
+    background-color: transparent;
+}
+
+@keyframes slowMove {
+    0% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+/* Revert to default pointer cursor for specific elements */
+a,
+button,
+input,
+textarea,
+select {
+    cursor: pointer;
+}

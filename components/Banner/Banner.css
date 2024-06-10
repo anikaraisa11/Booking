@@ -1,0 +1,37 @@
+.banner {
+  background: linear-gradient(#f2f6f64f, #f2f6f64f),
+    url(../../src/assets/img/banner_background.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.bannerContainer {
+  position: relative;
+}
+
+.leftBannerAnimation {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  font-weight: 600;
+  top: 50%;
+  left: 0;
+}
+.rightBannerAnimation {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.bannerIcon {
+  background-color: #2cb1ec;
+  color: white !important;
+  font-size: 30px;
+  border-radius: 4px;
+}
+.meetDoctor {
+  top: 70%;
+  position: absolute;
+  right: 0;
+}
+.banner_form {
+  position: absolute;
+}

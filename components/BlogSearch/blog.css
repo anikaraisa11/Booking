@@ -1,0 +1,33 @@
+.blogItem {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.blogItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2cb2ec50;
+    transition: left 0.4s;
+}
+
+.blogItem:hover::before {
+    left: 0;
+}
+
+/* Additional styling for box shadow and transform */
+.blogItem {
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+}
+
+.blogItem:hover {
+    transform: translateY(-13px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

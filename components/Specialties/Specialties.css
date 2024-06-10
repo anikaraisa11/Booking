@@ -1,0 +1,118 @@
+/*  */
+.slick-arrow {
+    position: absolute;
+    top: 0%;
+    border-radius: 50%;
+}
+
+.slick-prev {
+    left: 90%;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+
+.slick-prev, .slick-next {
+    font-size: 0px;
+    line-height: 0;
+    position: absolute;
+    top: 0% !important;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: 1;
+    border-radius: 50%;
+    color: #2DB1EC;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.slick-next:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: 1;
+    border-radius: 50%;
+    color: #2DB1EC;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 8px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.extraHover {
+    transition: 0.4s;
+    /* background-color: #2DB1EC; */
+}
+
+.extraHover:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+    background-color: #2DB1EC;
+}
+
+
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .slick-prev {
+        left:79% !important;
+    }
+
+    .slick-next {
+        right: 2% !important;
+    }
+
+}
+ /* Small devices (landscape phones, 576px and up) and extra small devices (portrait phones, less than 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .slick-prev {
+        left:82% !important;
+    }
+
+    .slick-next {
+        right: 2% !important;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slick-prev {
+        left:85% !important;
+    }
+
+    .slick-next {
+        right: 2% !important;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .slick-prev {
+        left:89% !important;
+    }
+
+    .slick-next {
+        right: 2% !important;
+    }
+}
+
+/*Extra large devices (desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/*Extra extra large devices (largest desktops, 1400px and up)*/
+@media (min-width: 1400px) {}

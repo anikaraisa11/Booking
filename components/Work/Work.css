@@ -1,0 +1,9 @@
+.extraAnimationWork{
+    background: #2cb2ec69;
+    transition: all 0.3s ease-in;
+}
+.extraAnimationWork:hover{
+    transition: all 0.3s ease-in;
+    transform: rotate(360deg);
+    background: white;
+}

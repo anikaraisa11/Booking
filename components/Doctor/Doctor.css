@@ -1,0 +1,54 @@
+/* .doctor {
+    background-image: url(../../app/img/doctorShape1.png), url(../../app/img/doctorShape2.png);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+  } */
+.doctor {
+  background-image: linear-gradient(
+      rgba(221, 218, 218, 0.219),
+      rgba(221, 218, 218, 0.219)
+    ),
+    url(../../src/assets/img/doctorShape1.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+}
+.doctor2 {
+  background-image: linear-gradient(
+      rgba(221, 218, 218, 0.219),
+      rgba(221, 218, 218, 0.219)
+    ),
+    url(../../src/assets/img/doctorShape2.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+}
+.extraColor {
+  background-color: rgba(221, 218, 218, 0.219);
+}
+.activeDoctor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #25d366;
+  position: relative; /* Adding position relative for absolute positioning */
+}
+
+.activeDoctor::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 2px solid #25d366; /* Added 'solid' before the color */
+  border-radius: 50%;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,35 @@
+
+
+.footerli {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.footerli:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 3px;
+    left: -10px;
+    transition: 0.5s;
+    color: #008080;
+}
+
+.footerli:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.footerli:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.footerLink{
+    color: gray;
+    transition: 0.2s ease-in;
+}
+.footerLink:hover{
+    color: #008080!important;
+    transition: 0.2s ease-in;
+}
